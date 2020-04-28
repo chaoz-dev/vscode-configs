@@ -1,0 +1,98 @@
+{
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "underline",
+    "editor.wordWrap": "on",
+    "editor.renameOnType": true,
+    "editor.renderControlCharacters": true,
+    "editor.cursorBlinking": "solid",
+    "editor.formatOnSave": true,
+    "editor.minimap.size": "fit",
+    "editor.suggest.localityBonus": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "workbench.commandPalette.history": 100,
+    "workbench.commandPalette.preserveInput": true,
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "python.analysis.memory.keepLibraryLocalVariables": true,
+    "python.analysis.memory.keepLibraryAst": true,
+    "python.languageServer": "Jedi",
+    "code-runner.runInTerminal": true,
+    "vim.cursorStylePerMode.insert": "underline",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "line",
+    "vim.cursorStylePerMode.visual": "block-outline",
+    "vim.cursorStylePerMode.visualblock": "block-outline",
+    "vim.cursorStylePerMode.visualline": "block-outline",
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "asdfjkl",
+    "vim.easymotionMarkerBackgroundColor": "yellow",
+    "vim.easymotionMarkerForegroundColorOneChar": "black",
+    "vim.easymotionMarkerForegroundColorTwoChar": "black",
+    "vim.easymotionMarkerFontSize": "20",
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerHeight": "20",
+    "vim.easymotionMarkerWidthPerChar": "10",
+    "vim.leader": " ",
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.enableNeovim": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["i", "i"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [":"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        },
+        {
+            "before": ["<C-c>"],
+            "commands": [":q"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": [":w"]
+        },
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["B"],
+            "after": ["^"]
+        },
+        {
+            "before": ["E"],
+            "after": ["$"]
+        },
+        {
+            "before": ["f"],
+            "after": ["leader", "leader", "f"]
+        },
+        {
+            "before": ["F"],
+            "after": ["leader", "leader", "F"]
+        },
+        {
+            "before": ["t"],
+            "after": ["leader", "leader", "t"]
+        },
+        {
+            "before": ["T"],
+            "after": ["leader", "leader", "T"]
+        }
+    ]
+}
