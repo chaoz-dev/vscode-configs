@@ -32,9 +32,13 @@
     "vim.easymotionMarkerFontWeight": "bold",
     "vim.easymotionMarkerHeight": "20",
     "vim.easymotionMarkerWidthPerChar": "10",
-    "vim.leader": " ",
-    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.searchHighlightColor": "gray",
+    "workbench.editor.enablePreview": false,
+
     "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/bin/nvim",
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": ["i", "i"],
@@ -47,8 +51,20 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": [":"],
+            "before": [";"],
             "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": [":"],
+            "commands": ["workbench.action.gotoLine"]
+        },
+        {
+            "before": ["<C-m>"],
+            "commands": ["workbench.action.openRecent"]
+        },
+        {
+            "before": ["<C-o>"],
+            "commands": ["workbench.action.quickOpen"]
         },
         {
             "before": [">"],
@@ -57,6 +73,46 @@
         {
             "before": ["<"],
             "commands": ["editor.action.outdentLines"]
+        },
+        {
+            "before": ["<tab>"],
+            "commands": ["workbench.action.nextEditorInGroup"]
+        },
+        {
+            "before": ["<tab>", "<S>"],
+            "commands": ["workbench.action.previousEditorInGroup"]
+        },
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.navigateLeft"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.navigateDown"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.navigateUp"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.navigateRight"]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.splitEditorLeft"]
+        },
+        {
+            "before": ["<leader>", "j"],
+            "commands": ["workbench.action.splitEditorDown"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "commands": ["workbench.action.splitEditorUp"]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "commands": ["workbench.action.splitEditorRight"]
         },
         {
             "before": ["<C-c>"],
