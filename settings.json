@@ -36,6 +36,7 @@
     "vim.leader": "<space>",
     "vim.searchHighlightColor": "gray",
     "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "new_file.txt",
 
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/bin/nvim",
@@ -51,20 +52,24 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": [";"],
-            "commands": ["workbench.action.showCommands"]
-        },
-        {
             "before": [":"],
             "commands": ["workbench.action.gotoLine"]
         },
         {
-            "before": ["<C-m>"],
-            "commands": ["workbench.action.openRecent"]
+            "before": ["<leader>", "o"],
+            "commands": ["editor.action.revealDefinitionAside"]
         },
         {
-            "before": ["<C-o>"],
-            "commands": ["workbench.action.quickOpen"]
+            "before": ["<leader>", "<leader>", "o"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        {
+            "before": [";"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["editor.action.peekDefinition"]
         },
         {
             "before": [">"],
@@ -75,47 +80,11 @@
             "commands": ["editor.action.outdentLines"]
         },
         {
-            "before": ["<tab>"],
-            "commands": ["workbench.action.nextEditorInGroup"]
+            "before": ["<C-r>"],
+            "commands": ["editor.action.rename"]
         },
         {
-            "before": ["<tab>", "<S>"],
-            "commands": ["workbench.action.previousEditorInGroup"]
-        },
-        {
-            "before": ["<C-h>"],
-            "commands": ["workbench.action.navigateLeft"]
-        },
-        {
-            "before": ["<C-j>"],
-            "commands": ["workbench.action.navigateDown"]
-        },
-        {
-            "before": ["<C-k>"],
-            "commands": ["workbench.action.navigateUp"]
-        },
-        {
-            "before": ["<C-l>"],
-            "commands": ["workbench.action.navigateRight"]
-        },
-        {
-            "before": ["<leader>", "h"],
-            "commands": ["workbench.action.splitEditorLeft"]
-        },
-        {
-            "before": ["<leader>", "j"],
-            "commands": ["workbench.action.splitEditorDown"]
-        },
-        {
-            "before": ["<leader>", "k"],
-            "commands": ["workbench.action.splitEditorUp"]
-        },
-        {
-            "before": ["<leader>", "l"],
-            "commands": ["workbench.action.splitEditorRight"]
-        },
-        {
-            "before": ["<C-c>"],
+            "before": ["<leader>", "d"],
             "commands": [":q"]
         },
         {
@@ -123,7 +92,7 @@
             "commands": [":w"]
         },
         {
-            "before": ["<leader>", "<leader>"],
+            "before": ["<leader>", "<leader>", "<leader>"],
             "commands": [":nohl"]
         },
         {
