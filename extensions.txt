@@ -1,0 +1,16 @@
+aaron-bond.better-comments
+eamodio.gitlens
+formulahendry.code-runner
+GitHub.vscode-pull-request-github
+HookyQR.beautify
+ms-dotnettools.csharp
+ms-python.python
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode-remote.remote-wsl
+ms-vscode-remote.vscode-remote-extensionpack
+ms-vscode.cpptools
+redhat.vscode-yaml
+rust-lang.rust
+vscodevim.vim
