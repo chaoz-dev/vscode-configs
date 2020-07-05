@@ -37,87 +37,176 @@
     "vim.searchHighlightColor": "gray",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "new_file.txt",
-
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.insertModeKeyBindingsNonRecursive": [
         {
-            "before": ["i", "i"],
-            "after": ["<Esc>"]
+            "before": [
+                "i",
+                "i"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         },
         {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": [":"],
-            "commands": ["workbench.action.gotoLine"]
+            "before": [
+                ":"
+            ],
+            "commands": [
+                "workbench.action.gotoLine"
+            ]
         },
         {
-            "before": ["<leader>", "o"],
-            "commands": ["editor.action.revealDefinitionAside"]
+            "before": [
+                "<leader>",
+                "o"
+            ],
+            "commands": [
+                "editor.action.revealDefinitionAside"
+            ]
         },
         {
-            "before": ["<leader>", "<leader>", "o"],
-            "commands": ["editor.action.revealDefinition"]
+            "before": [
+                "<leader>",
+                "<leader>",
+                "o"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
         },
         {
-            "before": [";"],
-            "commands": ["editor.action.showHover"]
+            "before": [
+                ";"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
         },
         {
-            "before": ["<leader>", "p"],
-            "commands": ["editor.action.peekDefinition"]
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "commands": [
+                "editor.action.peekDefinition"
+            ]
         },
         {
-            "before": [">"],
-            "commands": ["editor.action.indentLines"]
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
         },
         {
-            "before": ["<"],
-            "commands": ["editor.action.outdentLines"]
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
         },
         {
-            "before": ["<C-r>"],
-            "commands": ["editor.action.rename"]
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "commands": [
+                ":q"
+            ]
         },
         {
-            "before": ["<leader>", "d"],
-            "commands": [":q"]
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                ":w"
+            ]
         },
         {
-            "before": ["<leader>", "w"],
-            "commands": [":w"]
+            "before": [
+                "<leader>",
+                "<leader>",
+                "<leader>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
         },
         {
-            "before": ["<leader>", "<leader>", "<leader>"],
-            "commands": [":nohl"]
+            "before": [
+                "B"
+            ],
+            "after": [
+                "^"
+            ]
         },
         {
-            "before": ["B"],
-            "after": ["^"]
+            "before": [
+                "E"
+            ],
+            "after": [
+                "$"
+            ]
         },
         {
-            "before": ["E"],
-            "after": ["$"]
+            "before": [
+                "f"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "f"
+            ]
         },
         {
-            "before": ["f"],
-            "after": ["leader", "leader", "f"]
+            "before": [
+                "F"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "F"
+            ]
         },
         {
-            "before": ["F"],
-            "after": ["leader", "leader", "F"]
+            "before": [
+                "t"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "t"
+            ]
         },
         {
-            "before": ["t"],
-            "after": ["leader", "leader", "t"]
-        },
-        {
-            "before": ["T"],
-            "after": ["leader", "leader", "T"]
+            "before": [
+                "T"
+            ],
+            "after": [
+                "leader",
+                "leader",
+                "T"
+            ]
         }
-    ]
+    ],
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.colorTheme": "Monokai"
 }
