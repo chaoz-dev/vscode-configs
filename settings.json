@@ -206,7 +206,7 @@
         }
     ],
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Solarized Light",
     "workbench.preferredLightColorTheme": "Solarized Light",
     "workbench.preferredDarkColorTheme": "Monokai Dimmed",
     "editor.lineNumbers": "relative"

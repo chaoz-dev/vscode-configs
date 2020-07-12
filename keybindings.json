@@ -5,14 +5,6 @@
         "command": "workbench.action.showCommands"
     },
     {
-        "key": "tab",
-        "command": "workbench.action.nextEditorInGroup"
-    },
-    {
-        "key": "shift+tab",
-        "command": "workbench.action.previousEditorInGroup"
-    },
-    {
         "key": "ctrl+shift+h",
         "command": "workbench.action.splitEditorLeft"
     },
@@ -27,6 +19,14 @@
     {
         "key": "ctrl+shift+l",
         "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.previousEditorInGroup"
     },
     {
         "key": "ctrl+h",
