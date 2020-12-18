@@ -197,8 +197,8 @@
         }
     ],
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Default Dark+",
     "workbench.preferredLightColorTheme": "Solarized Light",
-    "workbench.preferredDarkColorTheme": "Monokai Dimmed",
+    "workbench.preferredDarkColorTheme": "Default Dark+",
     "editor.lineNumbers": "relative"
 }
