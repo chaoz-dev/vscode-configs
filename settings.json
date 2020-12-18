@@ -38,7 +38,7 @@
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "new_file.txt",
     "vim.enableNeovim": true,
-    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.neovimPath": "/usr/local/bin/nvim",
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": [
