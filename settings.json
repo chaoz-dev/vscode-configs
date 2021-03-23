@@ -1,22 +1,24 @@
 {
-    "editor.renderWhitespace": "boundary",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "cmake.configureOnOpen": true,
+    "code-runner.runInTerminal": true,
+    "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "underline",
-    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.size": "fit",
     "editor.renameOnType": true,
     "editor.renderControlCharacters": true,
-    "editor.cursorBlinking": "solid",
-    "editor.formatOnSave": true,
-    "editor.minimap.size": "fit",
+    "editor.renderWhitespace": "boundary",
     "editor.suggest.localityBonus": true,
+    "editor.wordWrap": "on",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "workbench.commandPalette.history": 100,
-    "workbench.commandPalette.preserveInput": true,
-    "C_Cpp.clang_format_fallbackStyle": "LLVM",
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.analysis.memory.keepLibraryAst": true,
     "python.languageServer": "Jedi",
-    "code-runner.runInTerminal": true,
     "vim.cursorStylePerMode.insert": "underline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.replace": "line",
@@ -24,21 +26,23 @@
     "vim.cursorStylePerMode.visualblock": "block-outline",
     "vim.cursorStylePerMode.visualline": "block-outline",
     "vim.easymotion": true,
-    "vim.easymotionKeys": "asdfjkl",
+    "vim.easymotionKeys": "asdfjkl;",
     "vim.easymotionMarkerBackgroundColor": "yellow",
     "vim.easymotionMarkerForegroundColorOneChar": "black",
     "vim.easymotionMarkerForegroundColorTwoChar": "black",
-    "vim.easymotionMarkerFontSize": "20",
-    "vim.easymotionMarkerFontWeight": "bold",
-    "vim.easymotionMarkerHeight": "20",
-    "vim.easymotionMarkerWidthPerChar": "10",
+    "vim.enableNeovim": true,
     "vim.hlsearch": true,
     "vim.leader": "<space>",
-    "vim.searchHighlightColor": "gray",
-    "workbench.editor.enablePreview": false,
-    "workbench.startupEditor": "new_file.txt",
-    "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/bin/nvim",
+    "vim.searchHighlightColor": "gray",
+    "window.autoDetectColorScheme": true,
+    "workbench.commandPalette.history": 100,
+    "workbench.commandPalette.preserveInput": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.preferredLightColorTheme": "Default Light+",
+    "workbench.preferredDarkColorTheme": "Default Dark+",
+    "workbench.startupEditor": "new_file.txt",
+
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -51,66 +55,6 @@
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                ":"
-            ],
-            "commands": [
-                "workbench.action.gotoLine"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "o"
-            ],
-            "commands": [
-                "editor.action.revealDefinitionAside"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "<leader>",
-                "o"
-            ],
-            "commands": [
-                "editor.action.revealDefinition"
-            ]
-        },
-        {
-            "before": [
-                ";"
-            ],
-            "commands": [
-                "editor.action.showHover"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "p"
-            ],
-            "commands": [
-                "editor.action.peekDefinition"
-            ]
-        },
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
-        },
         {
             "before": [
                 "<leader>",
@@ -132,27 +76,10 @@
         {
             "before": [
                 "<leader>",
-                "<leader>",
-                "<leader>"
+                "h"
             ],
             "commands": [
                 ":nohl"
-            ]
-        },
-        {
-            "before": [
-                "B"
-            ],
-            "after": [
-                "^"
-            ]
-        },
-        {
-            "before": [
-                "E"
-            ],
-            "after": [
-                "$"
             ]
         },
         {
@@ -195,10 +122,5 @@
                 "T"
             ]
         }
-    ],
-    "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Default Dark+",
-    "workbench.preferredLightColorTheme": "Solarized Light",
-    "workbench.preferredDarkColorTheme": "Default Dark+",
-    "editor.lineNumbers": "relative"
+    ]
 }

@@ -1,59 +1,196 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    //
+    // Workbench commands.
+    //
     {
+        // Show all commands.
         "key": "ctrl+;",
         "command": "workbench.action.showCommands"
     },
     {
-        "key": "ctrl+shift+h",
-        "command": "workbench.action.splitEditorLeft"
+        // Switch to next editor in group.
+        "key": "tab",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+j",
-        "command": "workbench.action.splitEditorDown"
+        // Switch to previous editor in group.
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+k",
-        "command": "workbench.action.splitEditorUp"
+        // Switch to next panel.
+        "key": "tab",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
     },
     {
-        "key": "ctrl+shift+l",
-        "command": "workbench.action.splitEditorRight"
+        // Switch to previous panel.
+        "key": "shift+tab",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
     },
     {
-        "key": "ctrl+n",
-        "command": "workbench.action.nextEditorInGroup"
+        // Select previous option in quick open.
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+p",
-        "command": "workbench.action.previousEditorInGroup"
+        // Select next option in quick open.
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
     },
     {
+        // Select previous suggestion in multiple suggestions.
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible && suggestWidgetMultipleSuggestions"
+    },
+    {
+        // Select next suggestion in multiple suggestions.
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible && suggestWidgetMultipleSuggestions"
+    },
+    {
+        // Navigate up in workbench.
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp",
+        "when": "!inQuickOpen && !suggestWidgetVisible"
+    },
+    {
+        // Navigate down in workbench.
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown",
+        "when": "!inQuickOpen && !suggestWidgetVisible"
+    },
+    {
+        // Navigate left in workbench.
         "key": "ctrl+h",
         "command": "workbench.action.navigateLeft"
     },
     {
-        "key": "ctrl+j",
-        "command": "workbench.action.navigateDown"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "workbench.action.navigateUp"
-    },
-    {
+        // Navigate right in workbench.
         "key": "ctrl+l",
         "command": "workbench.action.navigateRight"
     },
     {
+        // Split editor up.
+        "key": "alt+k",
+        "command": "workbench.action.splitEditorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        // Split editor down.
+        "key": "alt+j",
+        "command": "workbench.action.splitEditorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        // Split editor left.
+        "key": "alt+h",
+        "command": "workbench.action.splitEditorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        // Split editor right.
+        "key": "alt+l",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        // Open file.
         "key": "ctrl+o",
         "command": "workbench.action.quickOpen"
     },
     {
-        "key": "ctrl+m",
-        "command": "workbench.action.openRecent"
+        // Close file.
+        "key": "ctrl+c",
+        "command": "workbench.action.closeActiveEditor",
+        "when":  "editorTextFocus"
     },
     {
-        "key": "ctrl+c",
-        "command": "workbench.action.closeActiveEditor"
+        // Save file.
+        "key": "ctrl+s",
+        "command": "workbench.action.files.save",
+        "when": "editorTextFocus"
+    },
+
+    //
+    // File explorer commands.
+    //
+    {
+        // Focus file explorer.
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "!explorerViewletFocus"
+    },
+    {
+        // Create new file.
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "!inputFocus && explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        // Create new folder.
+        "key": "ctrl+m",
+        "command": "explorer.newFolder",
+        "when": "!inputFocus && explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        // Select file.
+        "key": "enter",
+        "command": "list.select",
+        "when": "!inputFocus && listFocus"
+    },
+    {
+        // Rename file.
+        "key": "ctrl+r",
+        "command": "renameFile",
+        "when": "!inputFocus && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly"
+    },
+
+    //
+    // Editor commands.
+    //
+    {
+        // Show hover.
+        "key": ";",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        // Comment line.
+        "key": "ctrl+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus"
+    },
+    {
+        // Go to line.
+        "key": "ctrl+'",
+        "command": "workbench.action.gotoLine",
+        "when": "editorTextFocus"
+    },
+    {
+        // Peek definition.
+        "key": "ctrl+p",
+        "command": "editor.action.peekDefinition",
+        "when": "editorTextFocus"
+    },
+    {
+        // Reveal definition.
+        "key": "ctrl+m",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    },
+    {
+        // Reveal definition aside.
+        "key": "ctrl+alt+m",
+        "command": "editor.action.revealDefinitionAside",
+        "when": "editorTextFocus"
     }
 ]
