@@ -35,7 +35,6 @@
     "vim.leader": "<space>",
     "vim.neovimPath": "/usr/bin/nvim",
     "vim.searchHighlightColor": "gray",
-    "window.autoDetectColorScheme": true,
     "workbench.colorTheme": "Default Dark+",
     "workbench.commandPalette.history": 100,
     "workbench.commandPalette.preserveInput": true,
