@@ -23,6 +23,7 @@
     "files.trimFinalNewlines": true,
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.analysis.memory.keepLibraryAst": true,
+    "python.condaPath": "/usr/local/anaconda3/bin/conda",
     "python.languageServer": "Jedi",
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "workbench.colorTheme": "Default Dark+",
