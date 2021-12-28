@@ -9,30 +9,6 @@
         "command": "workbench.action.showCommands"
     },
     {
-        // Switch to next editor in group.
-        "key": "tab",
-        "command": "workbench.action.nextEditorInGroup",
-        "when": "editorTextFocus"
-    },
-    {
-        // Switch to previous editor in group.
-        "key": "shift+tab",
-        "command": "workbench.action.previousEditorInGroup",
-        "when": "editorTextFocus"
-    },
-    {
-        // Switch to next panel.
-        "key": "tab",
-        "command": "workbench.action.nextPanelView",
-        "when": "panelFocus"
-    },
-    {
-        // Switch to previous panel.
-        "key": "shift+tab",
-        "command": "workbench.action.previousPanelView",
-        "when": "panelFocus"
-    },
-    {
         // Select previous option in quick open.
         "key": "ctrl+k",
         "command": "workbench.action.quickOpenSelectPrevious",
@@ -161,12 +137,6 @@
         // Show hover.
         "key": ";",
         "command": "editor.action.showHover",
-        "when": "editorTextFocus"
-    },
-    {
-        // Comment line.
-        "key": "ctrl+/",
-        "command": "editor.action.commentLine",
         "when": "editorTextFocus"
     },
     {

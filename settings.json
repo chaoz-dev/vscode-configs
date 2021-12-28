@@ -19,22 +19,7 @@
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.analysis.memory.keepLibraryAst": true,
     "python.languageServer": "Jedi",
-    "vim.cursorStylePerMode.insert": "underline",
-    "vim.cursorStylePerMode.normal": "block",
-    "vim.cursorStylePerMode.replace": "line",
-    "vim.cursorStylePerMode.visual": "block-outline",
-    "vim.cursorStylePerMode.visualblock": "block-outline",
-    "vim.cursorStylePerMode.visualline": "block-outline",
-    "vim.easymotion": true,
-    "vim.easymotionKeys": "asdfjkl;",
-    "vim.easymotionMarkerBackgroundColor": "yellow",
-    "vim.easymotionMarkerForegroundColorOneChar": "black",
-    "vim.easymotionMarkerForegroundColorTwoChar": "black",
-    "vim.enableNeovim": true,
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "vim.neovimPath": "/usr/bin/nvim",
-    "vim.searchHighlightColor": "gray",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "workbench.colorTheme": "Default Dark+",
     "workbench.commandPalette.history": 100,
     "workbench.commandPalette.preserveInput": true,
@@ -42,85 +27,4 @@
     "workbench.preferredLightColorTheme": "Default Light+",
     "workbench.preferredDarkColorTheme": "Default Dark+",
     "workbench.startupEditor": "new_file.txt",
-
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<leader>",
-                "d"
-            ],
-            "commands": [
-                ":q"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w"
-            ],
-            "commands": [
-                ":w"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "h"
-            ],
-            "commands": [
-                ":nohl"
-            ]
-        },
-        {
-            "before": [
-                "f"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "f"
-            ]
-        },
-        {
-            "before": [
-                "F"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "F"
-            ]
-        },
-        {
-            "before": [
-                "t"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "t"
-            ]
-        },
-        {
-            "before": [
-                "T"
-            ],
-            "after": [
-                "leader",
-                "leader",
-                "T"
-            ]
-        }
-    ]
 }
