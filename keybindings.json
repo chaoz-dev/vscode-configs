@@ -9,6 +9,30 @@
         "command": "workbench.action.showCommands"
     },
     {
+        // Switch to next editor in group.
+        "key": "tab",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "neovim.mode == normal && editorTextFocus"
+    },
+    {
+        // Switch to previous editor in group.
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "neovim.mode == normal && editorTextFocus"
+    },
+    {
+        // Switch to next panel in group.
+        "key": "ctrl+n",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+    {
+        // Switch to previous panel in group.
+        "key": "ctrl+p",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+    },
+    {
         // Select previous option in quick open.
         "key": "ctrl+k",
         "command": "workbench.action.quickOpenSelectPrevious",
@@ -97,40 +121,6 @@
     },
 
     //
-    // File explorer commands.
-    //
-    {
-        // Focus file explorer.
-        "key": "ctrl+e",
-        "command": "workbench.view.explorer",
-        "when": "!explorerViewletFocus"
-    },
-    {
-        // Create new file.
-        "key": "ctrl+n",
-        "command": "explorer.newFile",
-        "when": "!inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        // Create new folder.
-        "key": "ctrl+m",
-        "command": "explorer.newFolder",
-        "when": "!inputFocus && explorerViewletVisible && filesExplorerFocus"
-    },
-    {
-        // Select file.
-        "key": "enter",
-        "command": "list.select",
-        "when": "!inputFocus && listFocus"
-    },
-    {
-        // Rename file.
-        "key": "ctrl+r",
-        "command": "renameFile",
-        "when": "!inputFocus && explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly"
-    },
-
-    //
     // Editor commands.
     //
     {
@@ -140,27 +130,20 @@
         "when": "editorTextFocus"
     },
     {
-        // Go to line.
-        "key": "ctrl+'",
-        "command": "workbench.action.gotoLine",
-        "when": "editorTextFocus"
-    },
-    {
-        // Peek definition.
-        "key": "ctrl+p",
-        "command": "editor.action.peekDefinition",
-        "when": "editorTextFocus"
-    },
-    {
         // Reveal definition.
-        "key": "ctrl+m",
+        "key": "ctrl+;",
         "command": "editor.action.revealDefinition",
         "when": "editorTextFocus"
     },
+
+    //
+    // NVim commands.
+    //
     {
-        // Reveal definition aside.
-        "key": "ctrl+alt+m",
-        "command": "editor.action.revealDefinitionAside",
-        "when": "editorTextFocus"
-    }
+        // Esc into normal mode.
+        "key": "j",
+        "command": "vscode-neovim.compositeEscape1",
+        "when": "neovim.mode == insert && editorTextFocus",
+        "args": "j"
+    },
 ]

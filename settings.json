@@ -24,6 +24,7 @@
     "workbench.commandPalette.history": 100,
     "workbench.commandPalette.preserveInput": true,
     "workbench.editor.enablePreview": false,
+    "workbench.list.automaticKeyboardNavigation": false,
     "workbench.preferredLightColorTheme": "Default Light+",
     "workbench.preferredDarkColorTheme": "Default Dark+",
     "workbench.startupEditor": "new_file.txt",
