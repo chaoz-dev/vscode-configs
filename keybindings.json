@@ -3,11 +3,15 @@
     //
     // Workbench commands.
     //
+
+    // General.
     {
         // Show all commands.
-        "key": "ctrl+;",
+        "key": "ctrl+'",
         "command": "workbench.action.showCommands"
     },
+
+    // Switch views.
     {
         // Switch to next editor in group.
         "key": "tab",
@@ -32,30 +36,8 @@
         "command": "workbench.action.previousPanelView",
         "when": "panelFocus"
     },
-    {
-        // Select previous option in quick open.
-        "key": "ctrl+k",
-        "command": "workbench.action.quickOpenSelectPrevious",
-        "when": "inQuickOpen"
-    },
-    {
-        // Select next option in quick open.
-        "key": "ctrl+j",
-        "command": "workbench.action.quickOpenSelectNext",
-        "when": "inQuickOpen"
-    },
-    {
-        // Select previous suggestion in multiple suggestions.
-        "key": "ctrl+k",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetVisible && suggestWidgetMultipleSuggestions"
-    },
-    {
-        // Select next suggestion in multiple suggestions.
-        "key": "ctrl+j",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetVisible && suggestWidgetMultipleSuggestions"
-    },
+
+    // Navigate views.
     {
         // Navigate up in workbench.
         "key": "ctrl+k",
@@ -78,6 +60,8 @@
         "key": "ctrl+l",
         "command": "workbench.action.navigateRight"
     },
+
+    // Split views.
     {
         // Split editor up.
         "key": "alt+k",
@@ -102,6 +86,79 @@
         "command": "workbench.action.splitEditorRight",
         "when": "editorTextFocus"
     },
+
+    // Move views.
+    {
+        // Move editor left in group.
+        "key": "shift+h",
+        "command": "workbench.action.moveEditorLeftInGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        // Move editor right in group.
+        "key": "shift+l",
+        "command": "workbench.action.moveEditorRightInGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        // Move editor to previous group.
+        "key": "shift+k",
+        "command": "workbench.action.moveEditorToPreviousGroup",
+        "when": "editorTextFocus"
+    },
+    {
+        // Move editor to next group.
+        "key": "shift+j",
+        "command": "workbench.action.moveEditorToNextGroup",
+        "when": "editorTextFocus"
+    },
+
+    // Resize views.
+    {
+        // Toggle editor size.
+        "key": "ctrl+f",
+        "command": "workbench.action.toggleEditorWidths",
+        "when": "editorTextFocus"
+    },
+    {
+        // Toggle panel.
+        "key": "ctrl+t",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        // Toggle panel size.
+        "key": "ctrl+f",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "panelFocus"
+    },
+
+    // Select options.
+    {
+        // Select previous option in quick open.
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        // Select next option in quick open.
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        // Select previous suggestion in multiple suggestions.
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible && suggestWidgetMultipleSuggestions"
+    },
+    {
+        // Select next suggestion in multiple suggestions.
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible && suggestWidgetMultipleSuggestions"
+    },
+
+    // File IO.
     {
         // Open file.
         "key": "ctrl+o",
@@ -111,7 +168,7 @@
         // Close file.
         "key": "ctrl+c",
         "command": "workbench.action.closeActiveEditor",
-        "when":  "editorTextFocus"
+        "when":  "editorTextFocus && !panelFocus"
     },
     {
         // Save file.
