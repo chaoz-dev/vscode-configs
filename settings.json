@@ -14,6 +14,11 @@
     "editor.wordWrap": "on",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "extensions.supportUntrustedWorkspaces": {
+        "asvetliakov.vscode-neovim": {
+            "supported": true
+        }
+    },
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "python.analysis.memory.keepLibraryLocalVariables": true,

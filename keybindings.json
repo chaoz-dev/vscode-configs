@@ -16,25 +16,25 @@
         // Switch to next editor in group.
         "key": "tab",
         "command": "workbench.action.nextEditorInGroup",
-        "when": "neovim.mode == normal && editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Switch to previous editor in group.
         "key": "shift+tab",
         "command": "workbench.action.previousEditorInGroup",
-        "when": "neovim.mode == normal && editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Switch to next panel in group.
         "key": "ctrl+n",
         "command": "workbench.action.nextPanelView",
-        "when": "panelFocus"
+        "when": "panelFocus && !editorFocus"
     },
     {
         // Switch to previous panel in group.
         "key": "ctrl+p",
         "command": "workbench.action.previousPanelView",
-        "when": "panelFocus"
+        "when": "panelFocus && !editorFocus"
     },
 
     // Navigate views.
@@ -64,53 +64,53 @@
     // Split views.
     {
         // Split editor up.
-        "key": "alt+k",
+        "key": "ctrl+alt+k",
         "command": "workbench.action.splitEditorUp",
-        "when": "editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Split editor down.
-        "key": "alt+j",
+        "key": "ctrl+alt+j",
         "command": "workbench.action.splitEditorDown",
-        "when": "editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Split editor left.
-        "key": "alt+h",
+        "key": "ctrl+alt+h",
         "command": "workbench.action.splitEditorLeft",
-        "when": "editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Split editor right.
-        "key": "alt+l",
+        "key": "ctrl+alt+l",
         "command": "workbench.action.splitEditorRight",
-        "when": "editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
 
     // Move views.
     {
         // Move editor left in group.
-        "key": "shift+h",
+        "key": "ctrl+p",
         "command": "workbench.action.moveEditorLeftInGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus && !panelFocus"
     },
     {
         // Move editor right in group.
-        "key": "shift+l",
+        "key": "ctrl+n",
         "command": "workbench.action.moveEditorRightInGroup",
-        "when": "editorTextFocus"
+        "when": "editorFocus && !panelFocus"
     },
     {
         // Move editor to previous group.
-        "key": "shift+k",
+        "key": "ctrl+alt+p",
         "command": "workbench.action.moveEditorToPreviousGroup",
-        "when": "editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Move editor to next group.
-        "key": "shift+j",
+        "key": "ctrl+alt+n",
         "command": "workbench.action.moveEditorToNextGroup",
-        "when": "editorTextFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
 
     // Resize views.
@@ -118,7 +118,7 @@
         // Toggle editor size.
         "key": "ctrl+f",
         "command": "workbench.action.toggleEditorWidths",
-        "when": "editorTextFocus"
+        "when": "editorFocus"
     },
     {
         // Toggle panel.
@@ -129,7 +129,12 @@
         // Toggle panel size.
         "key": "ctrl+f",
         "command": "workbench.action.toggleMaximizedPanel",
-        "when": "panelFocus"
+        "when": "panelFocus && !editorFocus"
+    },
+    {
+        // Toggle sidebar.
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
     },
 
     // Select options.
@@ -168,13 +173,19 @@
         // Close file.
         "key": "ctrl+c",
         "command": "workbench.action.closeActiveEditor",
-        "when":  "editorTextFocus && !panelFocus"
+        "when":  "editorFocus && !panelFocus"
+    },
+    {
+        // Close file.
+        "key": "ctrl+y",
+        "command": "workbench.action.closeActiveEditor",
+        "when":  "editorFocus && !panelFocus"
     },
     {
         // Save file.
         "key": "ctrl+s",
         "command": "workbench.action.files.save",
-        "when": "editorTextFocus"
+        "when": "editorFocus"
     },
 
     //
@@ -184,13 +195,13 @@
         // Show hover.
         "key": ";",
         "command": "editor.action.showHover",
-        "when": "editorTextFocus"
+        "when": "editorFocus"
     },
     {
         // Reveal definition.
         "key": "ctrl+;",
         "command": "editor.action.revealDefinition",
-        "when": "editorTextFocus"
+        "when": "editorFocus"
     },
 
     //
@@ -200,7 +211,7 @@
         // Esc into normal mode.
         "key": "j",
         "command": "vscode-neovim.compositeEscape1",
-        "when": "neovim.mode == insert && editorTextFocus",
+        "when": "neovim.mode == insert && editorFocus",
         "args": "j"
     },
 ]
