@@ -92,25 +92,25 @@
         // Move editor left in group.
         "key": "ctrl+p",
         "command": "workbench.action.moveEditorLeftInGroup",
-        "when": "editorFocus && !panelFocus"
+        "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
     {
         // Move editor right in group.
         "key": "ctrl+n",
         "command": "workbench.action.moveEditorRightInGroup",
-        "when": "editorFocus && !panelFocus"
+        "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
     {
         // Move editor to previous group.
         "key": "ctrl+alt+p",
         "command": "workbench.action.moveEditorToPreviousGroup",
-        "when": "neovim.mode == normal && editorFocus"
+        "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
     {
         // Move editor to next group.
         "key": "ctrl+alt+n",
         "command": "workbench.action.moveEditorToNextGroup",
-        "when": "neovim.mode == normal && editorFocus"
+        "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
 
     // Resize views.
