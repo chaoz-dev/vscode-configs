@@ -26,13 +26,13 @@
     },
     {
         // Switch to next panel in group.
-        "key": "ctrl+n",
+        "key": "ctrl+shift+l",
         "command": "workbench.action.nextPanelView",
         "when": "panelFocus && !editorFocus"
     },
     {
         // Switch to previous panel in group.
-        "key": "ctrl+p",
+        "key": "ctrl+shift+h",
         "command": "workbench.action.previousPanelView",
         "when": "panelFocus && !editorFocus"
     },
@@ -90,25 +90,25 @@
     // Move views.
     {
         // Move editor left in group.
-        "key": "ctrl+p",
+        "key": "ctrl+shift+h",
         "command": "workbench.action.moveEditorLeftInGroup",
         "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
     {
         // Move editor right in group.
-        "key": "ctrl+n",
+        "key": "ctrl+shift+l",
         "command": "workbench.action.moveEditorRightInGroup",
         "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
     {
         // Move editor to previous group.
-        "key": "ctrl+alt+p",
+        "key": "ctrl+alt+shift+h",
         "command": "workbench.action.moveEditorToPreviousGroup",
         "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
     {
         // Move editor to next group.
-        "key": "ctrl+alt+n",
+        "key": "ctrl+alt+shift+l",
         "command": "workbench.action.moveEditorToNextGroup",
         "when": "neovim.mode == normal && editorFocus && !panelFocus"
     },
@@ -176,12 +176,6 @@
         "when":  "editorFocus && !panelFocus"
     },
     {
-        // Close file.
-        "key": "ctrl+y",
-        "command": "workbench.action.closeActiveEditor",
-        "when":  "editorFocus && !panelFocus"
-    },
-    {
         // Save file.
         "key": "ctrl+s",
         "command": "workbench.action.files.save",
@@ -195,7 +189,7 @@
         // Show hover.
         "key": ";",
         "command": "editor.action.showHover",
-        "when": "editorFocus"
+        "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Reveal definition.
