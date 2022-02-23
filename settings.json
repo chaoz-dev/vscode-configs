@@ -26,6 +26,7 @@
     "python.languageServer": "Jedi",
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vsicons.dontShowNewVersionMessage": true,
     "workbench.colorTheme": "Default Dark+",
     "workbench.commandPalette.history": 100,
     "workbench.commandPalette.preserveInput": true,
