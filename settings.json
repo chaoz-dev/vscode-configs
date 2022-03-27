@@ -2,6 +2,7 @@
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
     "cmake.configureOnOpen": true,
     "code-runner.runInTerminal": true,
+    "editor.bracketPairColorization.enabled": true,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "underline",
     "editor.formatOnSave": true,
