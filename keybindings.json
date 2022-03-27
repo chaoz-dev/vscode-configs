@@ -196,7 +196,7 @@
     {
         // Go to definition.
         "key": "ctrl+;",
-        "command": "editor.action.goToTypeDefinition",
+        "command": "editor.action.revealDefinition",
         "when": "neovim.mode == normal && editorFocus"
     },
 
