@@ -188,9 +188,9 @@
     // Editor commands.
     //
     {
-        // Show hover.
+        // Peek.
         "key": ";",
-        "command": "editor.action.showHover",
+        "command": "editor.action.peekDefinition",
         "when": "neovim.mode == normal && editorFocus"
     },
     {
