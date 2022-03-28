@@ -3,14 +3,18 @@
     //
     // Workbench commands.
     //
-
     // General.
     {
         // Show all commands.
         "key": "ctrl+'",
         "command": "workbench.action.showCommands"
     },
-
+    {
+        // Goto symbol.
+        "key": "ctrl+y",
+        "command": "workbench.action.showAllSymbols",
+        "when": "neovim.mode == normal && editorFocus"
+    },
     // Switch views.
     {
         // Switch to next editor in group.
@@ -36,7 +40,6 @@
         "command": "workbench.action.previousPanelView",
         "when": "panelFocus"
     },
-
     // Navigate views.
     {
         // Navigate up in workbench.
@@ -62,7 +65,6 @@
         "command": "workbench.action.navigateRight",
         "when": "!panelFocus"
     },
-
     // Split views.
     {
         // Split editor up.
@@ -88,7 +90,6 @@
         "command": "workbench.action.splitEditorRight",
         "when": "neovim.mode == normal && editorFocus"
     },
-
     // Move views.
     {
         // Move editor left in group.
@@ -114,7 +115,6 @@
         "command": "workbench.action.moveEditorToNextGroup",
         "when": "neovim.mode == normal && editorFocus"
     },
-
     // Resize views.
     {
         // Toggle editor size.
@@ -138,7 +138,6 @@
         "key": "ctrl+b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
-
     // Select options.
     {
         // Select previous option in quick open.
@@ -164,7 +163,6 @@
         "command": "selectNextSuggestion",
         "when": "suggestWidgetVisible && suggestWidgetMultipleSuggestions"
     },
-
     // File IO.
     {
         // Open file.
@@ -175,7 +173,7 @@
         // Close file.
         "key": "ctrl+c",
         "command": "workbench.action.closeActiveEditor",
-        "when":  "editorFocus && !panelFocus"
+        "when": "editorFocus && !panelFocus"
     },
     {
         // Save file.
@@ -183,7 +181,6 @@
         "command": "workbench.action.files.save",
         "when": "editorFocus"
     },
-
     //
     // Editor commands.
     //
@@ -199,7 +196,6 @@
         "command": "editor.action.revealDefinition",
         "when": "neovim.mode == normal && editorFocus"
     },
-
     //
     // NVim commands.
     //
