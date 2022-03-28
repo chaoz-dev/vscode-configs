@@ -66,25 +66,25 @@
     // Split views.
     {
         // Split editor up.
-        "key": "ctrl+alt+k",
+        "key": "alt+k",
         "command": "workbench.action.splitEditorUp",
         "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Split editor down.
-        "key": "ctrl+alt+j",
+        "key": "alt+j",
         "command": "workbench.action.splitEditorDown",
         "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Split editor left.
-        "key": "ctrl+alt+h",
+        "key": "alt+h",
         "command": "workbench.action.splitEditorLeft",
         "when": "neovim.mode == normal && editorFocus"
     },
     {
         // Split editor right.
-        "key": "ctrl+alt+l",
+        "key": "alt+l",
         "command": "workbench.action.splitEditorRight",
         "when": "neovim.mode == normal && editorFocus"
     },
