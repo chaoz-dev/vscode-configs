@@ -95,13 +95,25 @@
         // Move editor left in group.
         "key": "shift+h",
         "command": "workbench.action.moveEditorLeftInGroup",
-        "when": "neovim.mode == normal && editorFocus"
+        "when": "neovim.mode == normal && editorFocus && !activeEditorIsFirstInGroup"
     },
     {
         // Move editor right in group.
         "key": "shift+l",
         "command": "workbench.action.moveEditorRightInGroup",
-        "when": "neovim.mode == normal && editorFocus"
+        "when": "neovim.mode == normal && editorFocus && !activeEditorIsLastInGroup"
+    },
+    {
+        // Move editor to previous group if first in group.
+        "key": "shift+h",
+        "command": "workbench.action.moveEditorToPreviousGroup",
+        "when": "neovim.mode == normal && editorFocus && activeEditorIsFirstInGroup"
+    },
+    {
+        // Move editor to next group if last in group.
+        "key": "shift+l",
+        "command": "workbench.action.moveEditorToNextGroup",
+        "when": "neovim.mode == normal && editorFocus && activeEditorIsLastInGroup"
     },
     {
         // Move editor to previous group.
