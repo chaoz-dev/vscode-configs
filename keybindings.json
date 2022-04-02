@@ -11,7 +11,7 @@
     },
     {
         // Goto symbol.
-        "key": "ctrl+y",
+        "key": "ctrl+]",
         "command": "workbench.action.showAllSymbols",
         "when": "neovim.mode == normal && editorFocus"
     },
