@@ -169,6 +169,11 @@
         "key": "ctrl+o",
         "command": "workbench.action.quickOpen"
     },
+    //{
+    //    // Open MRU file.
+    //    "key": "ctrl+m",
+    //    "command": "workbench.action.quickOpenRecent"
+    //},
     {
         // Close file.
         "key": "ctrl+c",
