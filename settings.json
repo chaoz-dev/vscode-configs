@@ -32,6 +32,8 @@
     "workbench.commandPalette.history": 100,
     "workbench.commandPalette.preserveInput": true,
     "workbench.editor.enablePreview": false,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.list.automaticKeyboardNavigation": false,
     "workbench.preferredLightColorTheme": "Default Light+",
