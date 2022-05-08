@@ -13,7 +13,7 @@
         // Goto symbol.
         "key": "ctrl+]",
         "command": "workbench.action.showAllSymbols",
-        "when": "neovim.mode == normal && editorFocus"
+        "when": "neovim.mode == normal && editorTextFocus"
     },
     // Switch views.
     {
@@ -205,13 +205,13 @@
         // Peek.
         "key": ";",
         "command": "editor.action.peekDefinition",
-        "when": "neovim.mode == normal && editorFocus"
+        "when": "neovim.mode == normal && editorTextFocus && editorHasDefinitionProvider"
     },
     {
         // Go to definition.
         "key": "ctrl+;",
-        "command": "editor.action.revealDefinition",
-        "when": "neovim.mode == normal && editorFocus"
+        "command": "editor.action.revealDefinitionAside",
+        "when": "neovim.mode == normal && editorTextFocus && editorHasDefinitionProvider && !isInEmbeddedEditor"
     },
     //
     // NVim commands.
@@ -220,7 +220,7 @@
         // Esc into normal mode.
         "key": "j",
         "command": "vscode-neovim.compositeEscape1",
-        "when": "neovim.mode == insert && editorFocus",
+        "when": "neovim.mode == insert && editorTextFocus",
         "args": "j"
     },
 ]
