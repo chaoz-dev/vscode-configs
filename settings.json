@@ -25,6 +25,7 @@
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.analysis.memory.keepLibraryAst": true,
     "python.languageServer": "Jedi",
+    "redhat.telemetry.enabled": false,
     "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
     "vsicons.dontShowNewVersionMessage": true,
