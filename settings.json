@@ -13,8 +13,10 @@
     "editor.renderWhitespace": "boundary",
     "editor.suggest.localityBonus": true,
     "editor.wordWrap": "on",
+    "explorer.compactFolders": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "explorer.sortOrder": "filesFirst",
     "extensions.supportUntrustedWorkspaces": {
         "asvetliakov.vscode-neovim": {
             "supported": true
